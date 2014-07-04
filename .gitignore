@@ -1,0 +1,6 @@
+*.pyc
+*.db
+*.swp
+*media*
+local_settings.py
+local_urls.py
