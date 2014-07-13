@@ -4,6 +4,7 @@ from django.conf import settings
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.shortcuts import render
+from django.views.decorators.csrf import csrf_exempt
 
 from CodeConvert import CodeConvert
 
@@ -26,6 +27,7 @@ def change_dict_2_utf8(obj):
     return dict((CodeConvert.Convert2Utf8(k), CodeConvert.Convert2Utf8(v)) for k, v in obj.items())
 
 
+@csrf_exempt
 def batteryinfo(request):
     binfo = request.POST.getlist('batteryinfo', '')
 
