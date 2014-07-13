@@ -29,13 +29,16 @@ def change_dict_2_utf8(obj):
 
 @csrf_exempt
 def batteryinfo(request):
-    binfo = request.POST.getlist('batteryinfo', '')
+    try:
+        binfo = json.loads(request.body).get('batteryinfo', '')
+    except:
+        binfo = request.POST.getlist('batteryinfo', '')
 
     status = True
 
     try:
-        for info in binfo:
-            info_dict = ast.literal_eval(info)
+        for info_dict in binfo:
+            info_dict = ast.literal_eval(info_dict) if isinstance(info_dict, unicode) else info_dict
             info_dict['logtime'] = datetime.strptime(info_dict['logtime'], '%Y%m%d %H:%M:%S')
             form = BatteryInfoModelForm(info_dict)
             if form.is_valid():
