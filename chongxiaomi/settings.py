@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'chongxiaomi',
     'api',
     'data',
+    'officialsite',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -50,6 +51,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'mobi.middleware.MobileDetectionMiddleware',
 )
 
 ROOT_URLCONF = 'chongxiaomi.urls'

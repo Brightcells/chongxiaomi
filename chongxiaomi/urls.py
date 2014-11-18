@@ -12,6 +12,10 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
+)
+
+urlpatterns += patterns('',
+    url(r'^', include('officialsite.urls', namespace='officialsite')),
     # url(r'^api/', include('api.urls', namespace='api')),
     url(r'^data/', include('data.urls', namespace='data')),
 )

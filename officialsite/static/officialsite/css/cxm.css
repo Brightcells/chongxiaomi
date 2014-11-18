@@ -1,0 +1,140 @@
+a:hover, a:focus, a:active, a.active {
+    outline: 0;
+    color: #346e93 !important;
+}
+
+/* Navigation */
+.navbar {
+    min-height: 40px;
+    margin-bottom: 0;
+}
+.navbar-default {
+    background-color: #f6faf9;
+}
+
+.navbar-brand {
+    padding: 10px 15px 10px;
+    height: auto;
+}
+
+.navbar-toggle {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: grey;
+}
+
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-default .navbar-brand {
+    color: #346e93;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #a6aba7;
+}
+
+.navbar-default .navbar-brand>img, .navbar-default .navbar-nav>li>a>img {
+    float: left;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    color: #346e93;
+    background-color: #fff;
+}
+
+/* Header */
+header{
+    background: #469d68;
+}
+
+header .container {
+    padding-top: 20px;
+}
+
+header .intro-text .name {
+    color: #e1f1e7;
+}
+
+/* Intro */
+section#intro {
+    padding: 0;
+}
+
+.intro-left, .intro-right {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.intro-list-item {
+    height: 60px;
+    margin-bottom: 35px;
+    overflow: hidden;
+}
+
+.intro-list-item:last-child {
+    margin-bottom: 0;
+}
+
+.intro-img {
+    float: left;
+    height: 100%;
+    margin-right: 15px;
+}
+
+.intro-img>img {
+    padding-top: 25px;
+}
+
+.intro-text>strong {
+    color: #3a3a3a;
+    font-size: 12px;
+}
+
+.intro-text>p {
+    color: #3a3a3a;
+    font-size: 8px;
+}
+
+.line {
+    height: 500px;
+    background: #1196db;
+    width: 3px;
+}
+
+/* Download */
+section.download {
+    background: #1abff5;
+}
+
+.download-list-item>strong {
+    color: #3a3a3a;
+    font-size: 12px;
+}
+
+.download-list-item>p {
+    color: #3a3a3a;
+    font-size: 8px;
+}
+
+.download-icon {
+    height: 100px;
+    background: #41cfff;
+    border: 1px solid white;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.android {
+    background-image: url(../../../../static/officialsite/img/cxm/android.png);
+}
+
+.iphone {
+    background-image: url(../../../../static/officialsite/img/cxm/iphone.png);
+}
+
+.qrcode {
+    background-image: url(../../../../static/officialsite/img/cxm/qrcode.png);
+}
